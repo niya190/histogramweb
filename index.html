@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>RGB Histogram Specification - Teknik Informatika</title>
+    <title>Histogram Specification</title>
     <link rel="stylesheet" href="style.css">
     
-    <!-- MathJax Configuration -->
     <script>
         MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
@@ -17,20 +16,20 @@
 
 <body>
 
-    <h2 class="page-title">Simulasi RGB Histogram Specification</h2>
+    <h2 class="page-title">Simulasi Histogram Specification</h2>
 
     <div class="controls">
         <div class="upload-group">
             <div class="upload-item">
-                <label>1. Foto Asal (RGB):</label>
+                <label>1. Foto Asal :</label>
                 <input type="file" id="uploadAsal" accept="image/*">
             </div>
             <div class="upload-item">
-                <label>2. Foto Referensi (Target Tone):</label>
+                <label>2. Foto Referensi:</label>
                 <input type="file" id="uploadRef" accept="image/*">
             </div>
         </div>
-        <button class="primary-btn" onclick="prosesHistogramRGB()">Jalankan Proses RGB Matching</button>
+        <button class="primary-btn" onclick="prosesHistogramRGB()">Jalankan Proses Matching</button>
     </div>
 
     <div class="container">
@@ -49,7 +48,7 @@
         </div>
 
         <div class="box">
-            <h3>Hasil Akhir (RGB)</h3>
+            <h3>Hasil Akhir</h3>
             <canvas id="canvasHasil"></canvas>
             <h4>Histogram Hasil</h4>
             <canvas id="histHasil" class="hist-canvas" width="256" height="150"></canvas>
@@ -107,7 +106,6 @@
                     </tr>
                 </thead>
                 <tbody id="lutTableBody">
-                    <!-- Data will be injected here -->
                 </tbody>
             </table>
         </div>
